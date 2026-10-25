@@ -1,0 +1,67 @@
+/* JOURNEY — styles scoped by CSS class prefix. */
+.journey-section {
+  background: #f2f1ea;
+  color: #19221a;
+}
+.journey-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.journey-intro .section-heading {
+  max-width: 930px;
+}
+.journey-arrow {
+  margin-top: 85px;
+  opacity: .5;
+  flex-shrink: 0;
+}
+.milestone-list {
+  border-top: 1px solid #18231850;
+}
+.milestone {
+  display: grid;
+  grid-template-columns: 130px 75px 1fr 30px;
+  align-items: center;
+  gap: 22px;
+  padding: 32px 0;
+  border-bottom: 1px solid #18231835;
+  transition: padding .3s;
+}
+.milestone:hover {
+  padding-inline: 11px;
+}
+.milestone-year {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font: 500 15px var(--mono);
+}
+.milestone-year span {
+  font-size: 10px;
+  color: #6b7969;
+}
+.milestone-icon {
+  border: 1px solid #253b293d;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #56754e;
+}
+.milestone-info h3 {
+  font: 600 clamp(21px,2.5vw,31px) var(--display);
+  letter-spacing: -.045em;
+  margin: 0 0 8px;
+}
+.milestone-info p {
+  color: #697469;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0;
+}
+.milestone-arrow {
+  color: #5f7a58;
+}

@@ -1,0 +1,91 @@
+/* ABOUT — styles scoped by CSS class prefix. */
+.about-section {
+  background: #e6eae0;
+  color: #151e16;
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: .89fr 1fr;
+  gap: clamp(50px,9vw,150px);
+  align-items: center;
+}
+.about-photo {
+  height: min(62vw,635px);
+  position: relative;
+  overflow: hidden;
+  background: #c3d0b9;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: saturate(.64) contrast(1.04);
+}
+.about-photo:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,transparent 65%,#16322663);
+}
+.about-sticker {
+  position: absolute;
+  bottom: 28px;
+  left: 26px;
+  z-index: 2;
+  color: #eff4e9;
+  font: 700 23px/1.02 var(--display);
+  letter-spacing: -.04em;
+}
+.about-sticker b {
+  font: 10px var(--mono);
+  letter-spacing: .06em;
+}
+.about-photo-under {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: #3f5040;
+}
+.about-copy .small-accent {
+  font: 11px var(--mono);
+  color: #527d43;
+  letter-spacing: .1em;
+}
+.about-copy h3 {
+  font: 600 clamp(35px,4.15vw,62px)/1.05 var(--display);
+  letter-spacing: -.073em;
+  margin: 25px 0 28px;
+}
+.about-copy h3 em {
+  font: italic 400 1em/1.03 Georgia,serif;
+  letter-spacing: -.065em;
+}
+.about-copy p {
+  max-width: 600px;
+  color: #576056;
+  font-size: 16px;
+  line-height: 1.77;
+  margin: 0 0 16px;
+}
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 25px 20px;
+  border-top: 1px solid #1525183b;
+  border-bottom: 1px solid #1525183b;
+  padding: 28px 0;
+  margin: 26px 0;
+}
+.about-facts>div {
+  display: grid;
+  gap: 9px;
+}
+.about-facts span {
+  font: 10px var(--mono);
+  letter-spacing: .07em;
+  color: #73806f;
+}
+.about-facts strong {
+  font: 600 13px var(--body);
+}

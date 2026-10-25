@@ -1,0 +1,85 @@
+/* MODAL — styles scoped by CSS class prefix. */
+.dialog-overlay {
+  animation: fadeIn .22s ease;
+}
+.dialog-content {
+  animation: dialogPop .32s cubic-bezier(.22,1,.36,1);
+}
+.case-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  opacity: .55;
+  margin-bottom: 18px;
+  padding-right: 35px;
+}
+.case-title {
+  font: 600 clamp(40px,7vw,68px)/1 var(--display);
+  letter-spacing: -.07em;
+  margin-bottom: 10px;
+}
+.case-title span {
+  color: var(--acid);
+}
+.case-description {
+  max-width: 610px;
+  color: #c0cabd;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 23px;
+}
+.case-art {
+  overflow: hidden;
+  border-radius: 8px;
+  max-height: 250px;
+}
+.case-art .project-art {
+  height: 230px !important;
+}
+.case-subheading {
+  font: 600 23px var(--display);
+  letter-spacing: -.04em;
+  margin: 24px 0 10px;
+}
+.case-subheading span {
+  color: var(--acid);
+}
+.case-highlights {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.case-highlights li {
+  display: flex;
+  gap: 17px;
+  border-top: 1px solid #ffffff22;
+  padding: 12px 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #d2dbd0;
+}
+.case-highlights li span {
+  color: var(--acid);
+  font: 10px var(--mono);
+  padding-top: 3px;
+}
+.case-highlights p {
+  margin: 0;
+}
+.case-tech {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 12px 0 23px;
+}
+.case-tech span {
+  border: 1px solid #ffffff44;
+  padding: 7px 12px;
+  border-radius: 30px;
+  font: 10px var(--mono);
+}
+.case-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

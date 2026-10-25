@@ -1,0 +1,9 @@
+@keyframes fadeIn {from{opacity:0}to{opacity:1}}
+@keyframes slideIn {from{transform:translateX(30px);opacity:.6}to{transform:translateX(0);opacity:1}}
+@keyframes dialogPop {from{transform:translate(-50%,-46%) scale(.97);opacity:.5}to{transform:translate(-50%,-50%) scale(1);opacity:1}}
+@keyframes panelIn {from{opacity:.2;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tagIn {from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbitSpin {to{transform:translate(-50%,-50%) rotate(360deg)}}
+.orbital-experience,.orbit-fallback{height:100%;width:100%}.orbit-fallback{display:grid;place-items:center;position:relative;opacity:.9}.orbit-fallback__core{width:min(45vw,280px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 27%,#a5d477,#375944 48%,#122b24 74%);box-shadow:0 0 60px #c8ff742e,inset -20px -22px 40px #0007}.orbit-fallback__ring{position:absolute;top:50%;left:50%;width:min(64vw,430px);height:min(24vw,145px);border:2px solid #c8ff74aa;border-radius:50%;transform:translate(-50%,-50%) rotate(-25deg)}.orbit-fallback__ring.two{width:min(54vw,370px);border-color:#9bccbd66;transform:translate(-50%,-50%) rotate(48deg)}
+@media(min-width:768px) and (prefers-reduced-motion:no-preference){.hero-overline,.hero-availability,.hero-bottom-copy{animation:panelIn .8s ease both}.hero-title{animation:panelIn 1s .1s cubic-bezier(.22,1,.36,1) both}.hero-picture{animation:panelIn 1.15s .25s cubic-bezier(.22,1,.36,1) both}}
+@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1!important;transform:none!important}.orbit-fallback__ring{animation:none}}

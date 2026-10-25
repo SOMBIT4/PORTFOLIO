@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+*.log
+.vite
+
+# Documentation
+docs
+
+# Resume files
+*.pdf
+Sombit_Mazumder_Resume.pdf
+
+# Offline preview
+offline-preview.html

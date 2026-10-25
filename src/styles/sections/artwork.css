@@ -1,0 +1,600 @@
+/* PROJECT ARTWORK : ORIGINAL CSS ILLUSTRATIONS — styles scoped by CSS class prefix. */
+.project-art {
+  height: clamp(310px,34vw,494px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+.project-art.art-compact {
+  height: clamp(290px,30vw,420px);
+}
+.project-art>div:not(.art-watermark) {
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.art-watermark {
+  position: absolute;
+  z-index: 10;
+  bottom: 13px;
+  left: 17px;
+  font: 9px var(--mono);
+  letter-spacing: .1em;
+  opacity: .4;
+  pointer-events: none;
+}
+.project-art--cowork {
+  background: #d9e4d1;
+  background-image: radial-gradient(circle at 75% 30%,#f4fbde,transparent 57%);
+  color: #172c24;
+}
+.project-art--tesla {
+  background: #becbfa;
+  color: #0f2046;
+}
+.project-art--astro {
+  background: #dfb897;
+  color: #221813;
+}
+.project-art--relief {
+  background: #223831;
+  color: #dff9d7;
+}
+.project-art--merchandise {
+  background: #d7d2ef;
+  color: #26233c;
+}
+.project-art--espresso {
+  background: #bcd8c8;
+  color: #20392f;
+}
+.art-browser {
+  width: 78%;
+  height: 76%;
+  border-radius: 11px;
+  background: #f8faf2;
+  box-shadow: 0 30px 65px #37513b42;
+  overflow: hidden;
+  transform: rotate(-5deg) translate(2%,6%);
+}
+.art-browser-top {
+  height: 36px;
+  border-bottom: 1px solid #19301c18;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 19px;
+  font: 8px var(--mono);
+  letter-spacing: .06em;
+  color: #45614a;
+}
+.art-dots {
+  display: flex;
+  gap: 4px;
+}
+.art-dots i {
+  display: block;
+  background: #b4cab5;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.art-dots i:first-child {
+  background: #fbb1a0;
+}
+.cowork-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 27px 31px 19px;
+}
+.cowork-head small,.cowork-metrics small {
+  display: block;
+  font: 8px var(--mono);
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+  color: #557157;
+}
+.cowork-head strong {
+  font: 600 clamp(18px,2.5vw,38px)/1.06 var(--display);
+  letter-spacing: -.065em;
+}
+.avatar-pair {
+  background: #183f2d;
+  color: #d4ffae;
+  padding: 11px;
+  border-radius: 50%;
+  font: 10px var(--mono);
+}
+.cowork-metrics {
+  display: flex;
+  gap: 10px;
+  padding: 0 31px;
+}
+.cowork-metrics>div {
+  background: #eaf1e4;
+  flex: 1;
+  border-radius: 7px;
+  padding: 16px;
+}
+.cowork-metrics b {
+  font: 600 clamp(19px,2.5vw,35px) var(--display);
+}
+.cowork-metrics em {
+  font: 12px var(--mono);
+  color: #6b9862;
+}
+.cowork-slots {
+  display: flex;
+  gap: 8px;
+  padding: 25px 31px;
+  overflow: hidden;
+}
+.cowork-slots span {
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 1px solid #34533a44;
+  padding: 9px 8px;
+  font: 9px var(--mono);
+}
+.cowork-slots .active {
+  background: #c3e4ad;
+}
+.tesla-ui {
+  width: 84%;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  background: #dae4ff;
+  border: 1px solid #fff8;
+  box-shadow: 0 30px 70px #314c9d50;
+  border-radius: 12px;
+  transform: rotate(4deg) translateY(5%);
+}
+.map-grid {
+  position: absolute;
+  inset: -30%;
+  background: linear-gradient(55deg,transparent 47%,#9db4df6b 48%,#9db4df6b 50%,transparent 51%) 0 0 / 77px 75px,linear-gradient(125deg,transparent 46%,#a2b6d964 47%,#a2b6d964 50%,transparent 51%) 0 0 / 70px 80px;
+  opacity: .85;
+}
+.route-dashed {
+  position: absolute;
+  top: 28%;
+  right: 12%;
+  width: 52%;
+  height: 50%;
+  border: 5px solid #3268cb;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 20% 20% 50% 20%;
+  transform: rotate(-32deg);
+  box-shadow: 0 0 0 5px #daecffbb;
+}
+.route-point {
+  position: absolute;
+  z-index: 1;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 4px #3a72c4;
+}
+.route-start {
+  top: 30%;
+  right: 25%;
+}
+.route-end {
+  top: 69%;
+  right: 48%;
+  background: #c8ff74;
+}
+.tesla-top {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 9px var(--mono);
+}
+.mini-logo {
+  background: #122d65;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+}
+.tesla-ride-card {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  bottom: 25px;
+  width: 60%;
+  background: #f6f9ffed;
+  border-radius: 12px;
+  padding: 21px;
+  box-shadow: 0 9px 35px #29496c3d;
+}
+.tesla-ride-card small {
+  display: block;
+  font: 8px var(--mono);
+  letter-spacing: .09em;
+  color: #657c9f;
+  margin-bottom: 10px;
+}
+.tesla-ride-card strong {
+  font: 600 clamp(14px,1.6vw,23px) var(--display);
+  letter-spacing: -.05em;
+  white-space: nowrap;
+}
+.tesla-ride-card strong span {
+  color: #3974d1;
+}
+.tesla-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  color: #597094;
+  font: 8px var(--mono);
+}
+.tesla-go {
+  display: flex;
+  justify-content: space-between;
+  background: #16366a;
+  color: #e1efff;
+  font: 9px var(--mono);
+  border-radius: 5px;
+  padding: 10px;
+}
+.astro-ui {
+  position: relative;
+  width: 84%;
+  height: 86%;
+  border-radius: 3px;
+  background: #e9d4bb;
+  box-shadow: 0 30px 75px #865a3b51;
+  overflow: hidden;
+  transform: rotate(-3deg) translateY(5%);
+}
+.astro-brand {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  right: 21px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 18px var(--display);
+  letter-spacing: -.07em;
+}
+.astro-brand>span:first-child {
+  font-size: 12px;
+  color: #e17646;
+}
+.astro-bag {
+  margin-left: auto;
+  font: 9px var(--mono);
+}
+.astro-copy {
+  position: absolute;
+  left: 26px;
+  top: 25%;
+  z-index: 2;
+}
+.astro-copy small {
+  font: 9px var(--mono);
+}
+.astro-copy strong {
+  display: block;
+  font: 600 clamp(31px,4.4vw,63px)/.95 var(--display);
+  letter-spacing: -.08em;
+  margin-top: 12px;
+}
+.astro-copy em {
+  font-family: Georgia,serif;
+  font-weight: 400;
+}
+.astro-product {
+  position: absolute;
+  width: 52%;
+  height: 64%;
+  right: -1%;
+  bottom: 3%;
+  background: #dfad85;
+  border-radius: 50% 50% 7px 7px;
+  display: grid;
+  place-items: center;
+}
+.astro-product-sphere {
+  width: 64%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 27% 23%,#fff0d9,#da9f6a 33%,#9d4e3b 80%);
+  border-radius: 50%;
+  box-shadow: 16px 18px 35px #754d3d6b;
+  transform: rotate(-20deg);
+}
+.astro-product-name {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  font: 9px var(--mono);
+}
+.astro-index {
+  position: absolute;
+  bottom: 22px;
+  left: 23px;
+  font: 8px var(--mono);
+}
+.relief-ui {
+  width: 85%;
+  height: 81%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f3f7e9;
+  color: #233d2c;
+  box-shadow: 0 32px 60px #020b0845;
+  transform: rotate(4deg) translateY(5%);
+}
+.relief-sidebar {
+  width: 49px;
+  background: #172b22;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  color: #cfe9bd;
+  font-size: 15px;
+  padding: 16px;
+}
+.relief-icon {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #c8ff74;
+  color: #23332a;
+}
+.relief-dashboard {
+  padding: 26px;
+  flex: 1;
+  min-width: 0;
+}
+.relief-dashboard small {
+  font: 8px var(--mono);
+  letter-spacing: .09em;
+  color: #68806a;
+}
+.relief-dashboard strong {
+  display: block;
+  margin-top: 12px;
+  font: 600 clamp(18px,2.9vw,39px) var(--display);
+  letter-spacing: -.07em;
+}
+.relief-graph {
+  height: 42%;
+  background: #173a2a;
+  border-radius: 10px;
+  margin-top: 14px;
+  overflow: hidden;
+  padding: 9px;
+}
+.relief-graph svg {
+  width: 100%;
+  height: 100%;
+}
+.relief-bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.relief-bottom span {
+  flex: 1;
+  background: #e0e9d6;
+  border-radius: 7px;
+  padding: 10px;
+  font: 8px var(--mono);
+}
+.relief-bottom b {
+  display: block;
+  font: 600 22px var(--display);
+  margin-top: 5px;
+}
+.merch-ui {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.mobile-mock {
+  width: min(47%,225px);
+  height: 89%;
+  border: 8px solid #292745;
+  border-radius: 27px;
+  background: #f8f5ff;
+  overflow: hidden;
+  box-shadow: 22px 28px 50px #39385865;
+  transform: rotate(-7deg) translateY(8%);
+  position: relative;
+}
+.mobile-notch {
+  height: 11px;
+  width: 65px;
+  background: #292745;
+  border-radius: 0 0 12px 12px;
+  margin: auto;
+}
+.merch-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 12px;
+  font: 700 17px var(--display);
+  letter-spacing: -.08em;
+}
+.merch-head span {
+  margin-right: auto;
+  color: #a79bfc;
+}
+.merch-head small {
+  font-size: 12px;
+}
+.merch-feature {
+  position: relative;
+  overflow: hidden;
+  background: #c7bbfd;
+  height: 49%;
+  padding: 14px;
+}
+.merch-feature small {
+  font: 8px var(--mono);
+}
+.merch-feature strong {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-top: 18px;
+  font: 700 clamp(22px,2.4vw,33px)/.9 var(--display);
+  letter-spacing: -.07em;
+}
+.merch-disc {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  bottom: -14px;
+  right: -13px;
+  background: radial-gradient(circle at 28% 26%,#fff,#a59cf0 40%,#655bc0 85%);
+  box-shadow: -10px 14px 22px #4137805e;
+}
+.merch-products {
+  display: flex;
+  gap: 7px;
+  margin: 12px;
+}
+.merch-products div {
+  width: 33%;
+  height: 55px;
+  border-radius: 5px;
+  background: linear-gradient(145deg,#e8dcec,#b8a2d2);
+}
+.merch-products div:nth-child(2) {
+  background: linear-gradient(145deg,#e1dcf2,#8ea5db);
+}
+.merch-products div:nth-child(3) {
+  background: linear-gradient(145deg,#f1dfc9,#cfb4a1);
+}
+.merch-navbar {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  gap: 21px;
+  justify-content: center;
+  color: #5a5575;
+}
+.merch-floating-tag {
+  position: absolute;
+  right: 13%;
+  top: 23%;
+  transform: rotate(11deg);
+  color: #494175;
+  font: 10px var(--mono);
+  line-height: 1.8;
+}
+.merch-floating-tag b {
+  font-size: 25px;
+}
+.espresso-ui {
+  position: relative;
+  width: 88%;
+  height: 79%;
+  border-radius: 6px;
+  background: #f1e8d7;
+  box-shadow: 0 28px 66px #23523f50;
+  transform: rotate(4deg) translateY(4%);
+  overflow: hidden;
+}
+.espresso-logo {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  font: 700 20px var(--display);
+  letter-spacing: -.065em;
+}
+.espresso-logo span {
+  font-family: Georgia,serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.espresso-circle {
+  position: absolute;
+  width: 55%;
+  height: 115%;
+  background: #284a3c;
+  right: -8%;
+  top: -10%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.espresso-cup {
+  width: 90px;
+  height: 90px;
+  border: 14px solid #ebe0c8;
+  background: #563629;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 10px 15px 30px #0005;
+}
+.espresso-cup:after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 15px;
+  width: 22px;
+  height: 35px;
+  border: 7px solid #e9dec5;
+  border-left: 0;
+  border-radius: 0 20px 20px 0;
+}
+.espresso-coffee {
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%,#ad7043,#603628 70%);
+}
+.espresso-banner {
+  position: absolute;
+  left: 25px;
+  bottom: 63px;
+  max-width: 55%;
+  font: 700 clamp(23px,2.8vw,39px)/.95 var(--display);
+  letter-spacing: -.07em;
+}
+.espresso-banner em {
+  display: block;
+  font-family: Georgia,serif;
+  font-weight: 400;
+}
+.espresso-actions {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  font: 8px var(--mono);
+}

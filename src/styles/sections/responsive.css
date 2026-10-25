@@ -1,0 +1,454 @@
+/* RESPONSIVE — styles scoped by CSS class prefix. */
+@media (min-width:1500px) {
+  .hero-title {
+    font-size: 172px;
+  }
+  .hero-main {
+    padding-top: 100px;
+  }
+}
+@media (max-width:1199px) {
+  .hero-main {
+    grid-template-columns: 57% 43%;
+  }
+  .hero-title {
+    font-size: clamp(87px,11vw,150px);
+  }
+  .hero-picture {
+    width: min(33vw,345px);
+  }
+  .hero-bottom-copy {
+    flex-wrap: wrap;
+  }
+  .hero-bottom-copy p {
+    max-width: 430px;
+  }
+  .hero-portrait-block {
+    transform: translate(15px,25px);
+  }
+  .portrait-sticker {
+    right: -4%;
+  }
+}
+@media (max-width:991px) {
+  .desktop-nav {
+    gap: 22px;
+  }
+  .hero-section,.hero-inner {
+    min-height: 800px;
+  }
+  .hero-title {
+    font-size: clamp(80px,11.5vw,122px);
+  }
+  .hero-main {
+    min-height: 540px;
+  }
+  .hero-picture {
+    width: 32vw;
+    height: 430px;
+  }
+  .portrait-sticker {
+    width: 92px;
+    height: 92px;
+    font-size: 9px;
+    right: -5%;
+  }
+  .portrait-sticker svg {
+    bottom: 9px;
+    right: 15px;
+  }
+  .expertise-stage {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  }
+  .expertise-readout {
+    padding: 22px;
+  }
+  .expertise-readout__glyph {
+    width: 96px;
+    height: 96px;
+    margin: 24px auto 20px;
+  }
+  .expertise-readout__core {
+    font-size: 32px;
+  }
+  .about-layout {
+    gap: 48px;
+  }
+  .about-photo {
+    height: 520px;
+  }
+  .about-copy h3 {
+    font-size: clamp(31px,4.3vw,50px);
+  }
+  .about-copy p {
+    font-size: 14px;
+  }
+  .contact-section {
+    min-height: 620px;
+  }
+  .footer-signature {
+    margin-top: 65px;
+  }
+}
+@media (max-width:767px) {
+  .header-inner {
+    height: 79px;
+  }
+  .brand-mark {
+    font-size: 27px;
+  }
+  .brand-sub {
+    font-size: 9px;
+  }
+  .desktop-nav,.header-resume {
+    display: none;
+  }
+  .mobile-trigger {
+    display: inline-flex !important;
+    color: #fff !important;
+  }
+  .hero-section,.hero-inner {
+    min-height: auto;
+  }
+  .hero-inner {
+    padding-top: 91px;
+  }
+  .hero-topline {
+    font-size: 9px;
+  }
+  .hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding-top: 62px;
+    padding-bottom: 25px;
+  }
+  .hero-copy {
+    display: contents;
+  }
+  .hero-availability {
+    order: 0;
+    align-self: flex-start;
+    margin-bottom: 25px;
+  }
+  .hero-overline {
+    order: 1;
+    font-size: 10px;
+    margin-bottom: 21px;
+  }
+  .hero-title {
+    order: 2;
+    font-size: clamp(77px,15.9vw,130px);
+    line-height: .81;
+    letter-spacing: -.095em;
+    position: relative;
+    z-index: 3;
+  }
+  .hero-bottom-copy {
+    order: 4;
+    margin-top: 28px;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  .hero-bottom-copy p {
+    max-width: 410px;
+    font-size: 14px;
+  }
+  .hero-primary {
+    width: max-content;
+  }
+  .hero-portrait-block {
+    order: 3;
+    height: 390px;
+    margin-top: -25px;
+    align-self: center;
+    width: 100%;
+    transform: none;
+    justify-content: flex-end;
+    padding-right: 13%;
+  }
+  .hero-picture {
+    height: 390px;
+    width: min(59vw,260px);
+  }
+  .portrait-sticker {
+    right: 5%;
+    bottom: 4%;
+  }
+  .portrait-coordinate {
+    left: 15%;
+  }
+  .hero-orbit {
+    top: 31%;
+    right: -35%;
+    width: 100%;
+    height: 43%;
+    opacity: .45;
+    pointer-events: none;
+  }
+  .hero-footerline {
+    padding-block: 18px;
+    font-size: 9px;
+  }
+  .hero-footerline>span:nth-child(2) {
+    display: none;
+  }
+  .work-controls {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  .filter-list {
+    justify-content: flex-start;
+  }
+  .filter-pill {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 55px;
+  }
+  .project-art,.project-art.art-compact {
+    height: clamp(295px,74vw,440px);
+  }
+  .art-browser {
+    height: 79%;
+  }
+  .work-footnote {
+    margin-top: 40px;
+    font-size: 9px;
+  }
+  .expertise-stage {
+    grid-template-columns: 1fr;
+  }
+  .expertise-stream {
+    max-height: 430px;
+  }
+  .expertise-readout {
+    padding: 26px;
+  }
+  .expertise-readout__glyph {
+    width: 104px;
+    height: 104px;
+    margin: 26px auto 22px;
+  }
+  .expertise-capability {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .expertise-capability__arrow {
+    display: none;
+  }
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-photo-wrap {
+    max-width: 520px;
+    width: 100%;
+    margin: auto;
+  }
+  .about-photo {
+    height: clamp(410px,125vw,600px);
+  }
+  .about-copy h3 {
+    font-size: clamp(34px,9vw,54px);
+  }
+  .about-copy p {
+    font-size: 15px;
+  }
+  .journey-arrow {
+    display: none;
+  }
+  .milestone {
+    grid-template-columns: 58px 1fr 20px;
+    gap: 10px;
+    padding: 28px 0;
+  }
+  .milestone-year {
+    font-size: 12px;
+  }
+  .milestone-year span {
+    font-size: 8px;
+  }
+  .milestone-icon {
+    display: none;
+  }
+  .milestone-info h3 {
+    font-size: 20px;
+  }
+  .milestone-info p {
+    font-size: 12px;
+  }
+  .contact-center h2 {
+    font-size: clamp(54px,11.6vw,91px);
+  }
+  .contact-center {
+    padding: 80px 0 72px;
+  }
+  .contact-bottom {
+    flex-direction: column;
+  }
+  .footer-bar {
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 9px;
+  }
+  .footer-bar>span:nth-child(2) {
+    display: none;
+  }
+  .footer-signature {
+    font-size: 28vw;
+    margin: 67px -15px -5px;
+  }
+}
+@media (max-width:480px) {
+  .hero-topline-right {
+    font-size: 0;
+  }
+  .hero-topline-right .online-dot {
+    display: none;
+  }
+  .hero-topline-right:after {
+    content: 'BD / 2026';
+    font-size: 9px;
+  }
+  .hero-title {
+    font-size: clamp(65px,16.9vw,90px);
+  }
+  .hero-portrait-block {
+    margin-top: -9px;
+    height: 340px;
+    padding-right: 11%;
+  }
+  .hero-picture {
+    height: 345px;
+    width: 60vw;
+  }
+  .portrait-sticker {
+    right: 0;
+    bottom: 1%;
+    width: 82px;
+    height: 82px;
+    font-size: 8px;
+  }
+  .portrait-coordinate {
+    left: 9%;
+  }
+  .hero-bottom-copy {
+    margin-top: 22px;
+  }
+  .hero-footerline {
+    font-size: 9px;
+  }
+  .project-meta-left {
+    gap: 12px;
+  }
+  .project-heading-row h3 {
+    font-size: 32px;
+  }
+  .project-heading-row p {
+    font-size: 13px;
+  }
+  .project-art.art-compact {
+    height: 310px;
+  }
+  .art-browser {
+    width: 86%;
+  }
+  .cowork-head {
+    padding: 21px;
+  }
+  .cowork-metrics {
+    padding: 0 20px;
+  }
+  .cowork-slots {
+    padding: 17px 21px;
+  }
+  .tesla-ride-card {
+    left: 12px;
+    bottom: 12px;
+    width: 77%;
+    padding: 14px;
+  }
+  .tesla-ride-card strong {
+    font-size: 15px;
+  }
+  .astro-copy strong {
+    font-size: 38px;
+  }
+  .astro-product {
+    width: 55%;
+  }
+  .merch-floating-tag {
+    right: 4%;
+  }
+  .expertise-trust {
+    padding-block: 16px 18px;
+  }
+  .expertise-trust__item {
+    font-size: 14px;
+  }
+  .expertise-transmission {
+    padding: 17px 15px 16px;
+  }
+  .expertise-transmission__top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .expertise-filter {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+  .expertise-filter__count {
+    display: none;
+  }
+  .expertise-signal {
+    grid-template-columns: 8px minmax(0, 1fr);
+    gap: 11px;
+    padding: 12px 12px;
+  }
+  .expertise-signal__meta {
+    grid-column: 2;
+    gap: 8px;
+  }
+  .expertise-readout__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .expertise-capability {
+    grid-template-columns: 1fr;
+    padding-block: 26px;
+  }
+  .expertise-capability__index {
+    padding-top: 0;
+  }
+  .expertise-capability:hover,
+  .expertise-capability.active {
+    padding-left: 12px;
+  }
+  .about-facts strong {
+    font-size: 12px;
+  }
+  .contact-center h2 {
+    font-size: clamp(45px,11.1vw,69px);
+  }
+  .contact-top {
+    font-size: 8px;
+    gap: 15px;
+  }
+  .contact-top>span:last-child {
+    text-align: right;
+  }
+  .contact-center>p {
+    font-size: 9px;
+  }
+  .contact-social>div {
+    gap: 14px;
+  }
+  .footer-bar {
+    font-size: 8px;
+  }
+}

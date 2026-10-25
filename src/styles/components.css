@@ -1,0 +1,16 @@
+/* Organized styles: import order preserves the visual cascade. */
+@import "./sections/header.css";
+@import "./sections/hero.css";
+@import "./sections/work.css";
+@import "./sections/work-additions.css";
+@import "./sections/artwork.css";
+@import "./sections/engineering-lab.css";
+@import "./sections/case-study-dialog.css";
+@import "./sections/about.css";
+@import "./sections/journey.css";
+@import "./sections/path-so-far.css";
+@import "./sections/contact.css";
+@import "./sections/responsive.css";
+@import "./sections/work-responsive.css";
+@import "./sections/work-showcase.css";
+@import "./sections/expertise-signal.css";
